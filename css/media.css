@@ -1,0 +1,146 @@
+
+
+@media only all and (max-width: 1277px){
+    
+
+/* ---------------------- fix footer (black box wont expand with lef-aligned text) --------------------*/
+    
+    
+    .foo-t {
+        margin-right: 12px;
+        font-size: 13px;
+    }
+    
+    
+    .footer .media{
+        transform: scale(0.75, 0.75);
+    }
+    
+}
+
+@media only all and (max-width: 972px){
+    
+    
+
+/* -----------get rid of button on the hamburger --------------*/
+/* ----------- link js to the rest of the html --------------*/
+    
+    
+    .nav-main {
+        font-size: 17px;
+    }
+    
+    .footer {
+        height: 300px;
+    }
+    
+    .footer .foo-t.bar {
+        display: none;
+    }
+    
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .header nav .logo-link .logo {
+        max-width: 200px;
+    }
+    
+    .ham-accordion {
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 22px;
+        transform: scale(1.8, 1.8);
+    }
+    
+    .nav-main {
+        display: none;
+    }
+    
+    .nav-main a {
+        display: block;
+        border-bottom: 1px solid grey;
+        margin: 0;
+    }
+    
+    #toggle:checked + .header-nav-hid {
+        display: block;
+    }
+    
+/*---------------------- accordion ham ---------------------*/
+
+    .nav-use {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .header-nav-hid.open{
+        display: block;
+    }
+
+/*
+button.ham-accordion.active{
+  color: black;
+  border-radius: 8px 8px 0 0;
+  margin: 4px 0 0;
+ }
+
+div.nav-main{
+  background-color: black;
+  color: lightgray;
+  border-radius:0  0 4px 4px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: 0.3s;
+  padding: 0 8px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.nav-main.show{
+  opacity: 1;
+  max-height: 1000px;
+  padding: 8px;
+  margin: 0px 0 4px;
+}
+*/   
+}
+
+
+@media only all and (max-width: 680px) {
+    .footer {
+        height: 250px;
+    }
+    
+    .foo-t {
+        font-size: 10px;
+    }
+}
+
+
+@media only all and (max-width: 400px) {
+    .foo-t {
+        font-size: 8px;
+    }
+    
+    .footer .media{
+        transform: scale(0.6, 0.6);
+    }
+}
+
+
+
+

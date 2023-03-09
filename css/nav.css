@@ -1,0 +1,125 @@
+.header {
+   background-color: white;
+   max-height: 70px;
+   overflow: hidden;
+   background-position: center;
+   padding-bottom: 31px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+
+.nav-main{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+    position: relative;
+    right: 5px;
+}
+
+.nav-main a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.header nav .logo-link .logo {
+    display: block;
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: auto;
+    transform: scale(0.90, 0.90);
+    transition: all 0.2s ease 0s;
+}
+
+.header .logo:hover {
+    filter: invert(100%)
+}
+
+.header .nav-main {
+    font-size: 15px;
+    color: black;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.header .nav {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+
+.header .nav:hover{
+    border-bottom: 2px solid black;
+}
+
+.header .nav.contact {
+    padding: 10px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+}
+
+.header .nav.contact:hover {
+   color: white;
+   background-color: black;
+}
+
+/*-------------------- hamburger -------------------*/
+
+.ham-accordion {
+        display: none;
+    }
+
+.hamburger {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    transition: all 0.2s ease 0s;
+}
+
+.hamburger:hover {
+    color: aqua;
+    transform: {1.1, 1.1};
+}
+
+#toggle {
+    display: none;
+}
+
+/*-------------------- hidden nav -------------------*/
+
+.header-nav-hid {
+    display: none;
+}
+
+.nav-main-hid {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.nav-main-hid a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border: solid 1px black; 
+    transition: all 0.2s ease 0s;
+}
+
+.nav-main-hid a:hover {
+    background-color: darkgrey;
+    color: white;
+}
+

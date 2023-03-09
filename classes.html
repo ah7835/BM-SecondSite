@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BM Classes | Anthony Ho P2</title>
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    
+    
+    <div class="header">
+            <nav>
+                <a href="index.html" class="logo-link"><img src="pic/icon/LogoV1.png" alt="logo" class="logo"></a>
+                
+                <div class="nav-use">
+                    <label class="hamburger" for="toggle">&#9776;</label>
+                    <input class="extra-toggle" type="checkbox" id="toggle"/>
+                    <ul class="nav-main">
+                        <li><a href="index.html" class="nav home">Home</a></li>
+                        <li><a href="about.html" class="nav about">About</a></li>
+                        <li><a href="resources-login.html" class="nav resources">Resources</a></li>
+                        <li><a href="classes.html" class="nav classes">Classes</a></li>
+                        <li><a href="contact.html" class="nav contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    
+    <div class="hr"><hr></div>
+    
+    
+    <div class="header-nav-hid">
+        <ul class="nav-main-hid">
+            <li><a href="index.html" class="nav-hid home">Home</a></li>
+            <li><a href="about.html" class="nav-hid about">About</a></li>
+            <li><a href="resources-login.html" class="nav resources">Resources</a></li>
+            <li><a href="classes.html" class="nav-hid  classes">Classes</a></li>
+            <li><a href="contact.html" class="nav-hid  contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="opener">
+        <hr>
+        <p class="title">Class Packages</p>
+        <p class="subtext">Join our unlimited classes for a chance to practice and use Chinese Mandarin! We offer Mandarin lessons for adults, teenagers, entreprises, and young children. With our amazing teachers and classmates, you will never want to give up!</p>
+    </div>
+    <div class="content">
+        
+  <!--  <div class="package adult">
+            <p>►  Adults</p>
+        </div>
+        <div class="package teen">
+            <p>►  Teenagers</p>
+        </div>
+        <div class="package child">
+            <p>►  Children</p>
+        </div>
+        <div class="package entreprises">
+            <p>►  Entreprises</p>
+        </div>                      
+   -->
+        
+        <button onclick="closeAll();">Close All</button>
+        
+        <button class="accordion">Adults</button>
+        <div class="panel">
+            
+            
+            <div class="flex">
+                <div class="box private a">
+                    <a class="img pri" href="#" style="background-image:url(pic/class/adults/private.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$2799.00</p>
+                    <hr>
+                    <p class="sub one a">6-Month / 1-year<br>Combination-Private and Group</p>
+                </div>
+                <div class="box unlimited a">
+                    <a class="img unl" href="#" style="background-image:url(pic/class/adults/unlimited.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$1192.00</p>
+                    <hr>
+                    <p class="sub two a">6-Month / 1-year<br>Unlimited Group Class Package</p>
+                </div>
+                <div class="box group a">
+                    <a class="img gro" href="#" style="background-image:url(pic/class/adults/group.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$463.00</p>
+                    <hr>
+                    <p class="sub three a">2-Month<br>Group Class Package</p>
+                </div>
+                <div class="box intensive a">
+                    <a class="img int" href="#" style="background-image:url(pic/class/adults/intensive.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$1690.00</p>
+                    <hr>
+                    <p class="sub four a">Intensive Class</p>
+                </div>
+                <div class="box tutor a">
+                    <a class="img tut" href="#" style="background-image:url(pic/class/adults/tutor.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$1399.00</p>
+                    <hr>
+                    <p class="sub five a">Private In-Person<br>Tutor Package</p>
+                </div>
+                <div class="box event a">
+                    <a class="img eve" href="#" style="background-image:url(pic/class/adults/event.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$20.00</p>
+                    <hr>
+                    <p class="sub six a">Event Ticket</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button class="accordion">Teenagers</button>
+        <div class="panel">
+            
+            
+            <div class="flex">
+                <div class="box weekend t">
+                    <a class="img wee" href="#" style="background-image:url(pic/class/teens/weekend.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$1890.00</p>
+                    <hr>
+                    <p class="sub one a">Weekend School</p>
+                </div>
+                <div class="box 6-group t">
+                    <a class="img 6-gro" href="#" style="background-image:url(pic/class/teens/t-six.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$1192.00</p>
+                    <hr>
+                    <p class="sub two t">6-Month Teenagers<br>Group Class Package</p>
+                </div>
+                <div class="box 2-month t">
+                    <a class="img 2-mon" href="#" style="background-image:url(pic/class/teens/t-two.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$550.00</p>
+                    <hr>
+                    <p class="sub three a">2-Month Teenagers<br>Group Class Package</p>
+                </div>
+                <div class="box private t">
+                    <a class="img pri" href="#" style="background-image:url(pic/class/teens/priv-t.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$1498.00</p>
+                    <hr>
+                    <p class="sub four t">Private In-Person<br>Tutor Package</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button class="accordion">Children</button>
+        <div class="panel">
+            
+            
+            <div class="flex">
+                <div class="box summer c">
+                    <a class="img sum" href="#" style="background-image:url(pic/class/child/summer.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$860.00</p>
+                    <hr>
+                    <p class="sub one a">Mandarin Chinese<br>Summer Camp</p>
+                </div>
+                <div class="box weekend c">
+                    <a class="img wee" href="#" style="background-image:url(pic/class/child/weekend-c.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$1890.00</p>
+                    <hr>
+                    <p class="sub two t">Weekend School</p>
+                </div>
+                <div class="box event c">
+                    <a class="img eve" href="#" style="background-image:url(pic/class/child/event-c.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$10.00</p>
+                    <hr>
+                    <p class="sub three a">Event Ticket</p>
+                </div>
+                <div class="box two-times c">
+                    <a class="img two" href="#" style="background-image:url(pic/class/child/twice.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$1800.00</p>
+                    <hr>
+                    <p class="box sub four t">2-Times a Week<br>Children Group Class</p>
+                </div>
+                <div class="box once c">
+                    <a class="img once" href="#" style="background-image:url(pic/class/child/once.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$1050.00</p>
+                    <hr>
+                    <p class="sub four t">Once a Week<br>Children Group Class</p>
+                </div>
+                <div class="box private c">
+                    <a class="img pri" href="#" style="background-image:url(pic/class/child/skype.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$1500.00</p>
+                    <hr>
+                    <p class="sub four t">Private In-Person<br>Skype Tutor Package</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button class="accordion">Entreprises</button>
+        <div class="panel">
+            
+            
+            <div class="flex">
+                <div class="box combine e">
+                    <a class="img com" href="#" style="background-image:url(pic/class/entreprises/combo.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>
+                    </a>
+                    <p class="heading">$2799.00</p>
+                    <hr>
+                    <p class="sub one a">6-Month / 1-year<br>Combination-Private and Group</p>
+                </div>
+                <div class="box group e">
+                    <a class="img gro" href="#" style="background-image:url(pic/class/entreprises/group-e.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$798.00</p>
+                    <hr>
+                    <p class="sub two t">2-Month<br>Group Class Package</p>
+                </div>
+                <div class="box private e">
+                    <a class="img pri" href="#" style="background-image:url(pic/class/entreprises/private-e.jpg);">
+                        <div class="overlay"></div>
+                        <div class="click"><img src="pic/icon/onhover.png" alt="onhover"></div>                
+                    </a>
+                    <p class="heading">$1500.00</p>
+                    <hr>
+                    <p class="sub three a">Private In-Person<br>Tutor Package</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <script>
+            var accordions = document.querySelectorAll("button.accordion");
+
+            for (var i = 0; i < accordions.length; i++) {
+                accordions[i].onclick = function() {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                };
+            }
+
+    <!------- Get rid of later ---->
+            function closeAll() {
+                for (var i = 0; i < accordions.length; i++) {
+                    accordions[i].classList.remove("active");   
+                    accordions[i].nextElementSibling.classList.remove("show");
+                    }
+            }
+        </script>
+    </div>
+    
+    
+    
+    
+    
+    <div class="footer">
+        <div class="footer-text">
+            <p class="foo-t">@2014 BeautifulMandarin</p>
+            <p class="foo-t bar">  |  </p>
+            <div class="foo-stuff">
+                <a href="#" class="foo-t">Terms</a>
+                <a href="#" class="foo-t">Private Policy</a>
+                <a href="#" class="foo-t">Cultural Exchange</a>
+            </div>
+            <p class="foo-t bar">  |  </p>
+            <div class="foo-contact">
+                <p class="foo-t">(343)395-6078</p>
+                <p class="foo-t">syan@beautifulmandarin.com</p>
+            </div>
+        </div>
+        <div class="media">
+            <a href="https://www.linkedin.com/company/beautifulmandarin/about/" target="_blank" class="social linkedin">
+                <img src ="pic/icon/Linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://www.facebook.com/Beautiful-Mandarin-509807202524210/" target="_blank" class="social facebook">
+                <img src ="pic/icon/Facebook.png" alt="facebook">
+            </a>
+        </div>
+    </div>
+    
+    
+    <script src="js/hamburger.js"></script>
+    
+    
+</body>
+</html>

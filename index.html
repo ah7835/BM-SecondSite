@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beautiful Mandarin | Anthony Ho P2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">   
+    <script src="js/hamburger.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="header">
+            <nav>
+                <a href="index.html" class="logo-link"><img src="pic/icon/LogoV1.png" alt="logo" class="logo"></a>
+                
+                <div class="nav-use">
+                    <label class="ham-accordion"><label class="hamburger" for="toggle">&#9776;</label></label>
+                    <input class="extra-toggle" type="checkbox" id="toggle"/>
+                    <ul class="nav-main">
+                        <li><a href="index.html" class="nav home">Home</a></li>
+                        <li><a href="about.html" class="nav about">About</a></li>
+                        <li><a href="resources-login.html" class="nav resources">Resources</a></li>
+                        <li><a href="classes.html" class="nav classes">Classes</a></li>
+                        <li><a href="contact.html" class="nav contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <hr>
+    </div>
+    
+    <div class="header-nav-hid">
+        <ul class="nav-main-hid">
+            <li><a href="index.html" class="nav-hid home">Home</a></li>
+            <li><a href="about.html" class="nav-hid about">About</a></li>
+            <li><a href="resources-login.html" class="nav resources">Resources</a></li>
+            <li><a href="classes.html" class="nav-hid  classes">Classes</a></li>
+            <li><a href="contact.html" class="nav-hid  contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="main">
+        <div class="front">
+            <p class="title">Beautiful Mandarin</p>
+            <p class="subtitle">The Best Chinese School in NYC</p>
+            <a href="classes.html" class="apply">Apply Now</a>
+        </div>
+    </div>
+    <div class="yelp">
+        <hr>
+        <p class="subhead">Customer Testimonies</p>
+        
+        
+        
+<!--- Make into carousel -->
+        
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <div class="review one">
+                    <div class="profile one"><img src="pic/yelp/Low-res/renee.png" alt="yelp-pic" class="img"></div>
+                    <p class="name one">Renee R.</p>
+                    <p class="talk one">She follows up immediately and never leaves a stone unturned. I am so very thankful to be one of her students. I am looking forward to working with Sissi long enough to become conversant.</p>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <div class="review two">
+                    <div class="profile two"><img src="pic/yelp/Low-res/april.png" alt="yelp-pic" class="img"></div>
+                    <p class="name two">April S.</p>
+                    <p class="talk two">Sissi is a wonderful teacher. She is positive, patient, and truly understands how to teach the language. The workbooks and classes are challenging but everything is step-by-step. I never feel overwhelmed -- I'm having a lot of fun and am excited to learn more.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <div class="review three">
+                    <div class="profile three"><img src="pic/yelp/Low-res/ray.png" alt="yelp-pic" class="img"></div>
+                    <p class="name three">Ray N.</p>
+                    <p class="talk three">I initially wasn't too excited about learning characters BUT Sissi helped me see the value in them If your looking for a wellrounded start in Mandarin please contact Sissi! She has been patient with me and a joy to learn from.</p>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <div class="review four">
+                    <div class="profile four"><img src="pic/yelp/Low-res/baron.png" alt="yelp-pic" class="img"></div>
+                    <p class="name four">Baron Jon J.</p>
+                    <p class="talk four">Sissi is by far the best Mandarin teacher you could ask for. I came to her without any real knowledge of the language. She has taken me from nothing to reading novels, watching tv and speaking to native speakers everyday. She is a gem amongst Mandarin teachers.</p> 
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <div class="review five">
+                <div class="profile five"><img src="pic/yelp/Low-res/marc.png" alt="yelp-pic" class="img"></div>
+                    <p class="name five">Marc S.</p>
+                    <p class="talk five">She became my very first Chinese teacher. Right off the bat, I found that she provided a great environment for learning. We have supportive teachers and many eager, smart, and friendly students like myself whom I've met and have become great friends and study buddies. Sissi and all the teachers are hard-working and ensure we have all the necessary support and materials for learning.</p>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+}
+</script>
+
+<!--- footer -->
+        
+        
+        
+    </div>
+    <div class="footer">
+        <div class="footer-text">
+            <p class="foo-t">@2014 BeautifulMandarin</p>
+            <p class="foo-t bar">  |  </p>
+            <div class="foo-stuff">
+                <a href="#" class="foo-t content">Terms</a>
+                <a href="#" class="foo-t content">Private Policy</a>
+                <a href="#" class="foo-t content">Cultural Exchange</a>
+            </div>
+            <p class="foo-t bar">  |  </p>
+            <div class="foo-contact">
+                <p class="foo-t content">(343)395-6078</p>
+                <p class="foo-t content">syan@beautifulmandarin.com</p>
+            </div>
+        </div>
+        <div class="media">
+            <a href="https://www.linkedin.com/company/beautifulmandarin/about/" target="_blank" class="social linkedin">
+                <img src ="pic/icon/Linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://www.facebook.com/Beautiful-Mandarin-509807202524210/" target="_blank" class="social facebook">
+                <img src ="pic/icon/Facebook.png" alt="facebook">
+            </a>
+        </div>
+    </div>
+    
+    <script src="js/hamburger.js"></script>
+    
+</body>
+</html>

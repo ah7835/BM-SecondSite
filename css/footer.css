@@ -1,0 +1,51 @@
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    min-height: 80px;
+    max-height: 100px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-left: 17px;
+}
+
+.foo-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foo-t {
+    margin-right: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease 0s;
+}
+
+.footer .media .social {
+    height: 50%;
+    width: auto;
+    margin-top: -25px;
+}
+
+.footer .media .social:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease 0s;
+}
+
+.footer .media .social img {
+    margin-top: 5px;
+    transform: scale(0.75, 0.75);
+}

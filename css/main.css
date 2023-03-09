@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Noto Serif', serif;
+}
+
+/* +++++++++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++++++++ */
+
+
+.header .nav.home {
+    border-bottom: 2px solid black;
+}
+
+/* +++++++++++++++++++++++++++++++ MAIN +++++++++++++++++++++++++++++++ */
+
+
+.main{
+    position: relative;
+    background-image: url(../pic/homepage/homepage-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+.main p {
+    text-align: center;
+}
+
+.main .front {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1500ps;
+    
+}
+
+
+.main .front .title {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 100px;
+    letter-spacing: -5px;
+    padding-top: 150px;
+}
+
+.main .front .subtitle {
+    color: lightgray;
+    font-size: 45px;
+    letter-spacing: -4px;
+    margin-top: -5px;
+}
+
+.main .front a {
+    display: block;
+    color: cyan;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 20;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: cyan;
+    border-image: initial;
+    text-decoration: none;
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+}
+
+.main .front a:hover {
+    background-color: aqua;
+    border-color: black;
+    color: black;
+}
+
+/* +++++++++++++++++++++++++++++++ YELP +++++++++++++++++++++++++++++++ */
+
+
+/*
+    yelp slider
+*/
+
+.yelp hr {
+    border: 2px solid aqua;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+.yelp .subhead {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -3px;
+    margin-top: 
+}
+
+
+
+/* ???????????????? Make this into carousel ???????????????? */
+
+
+.review .name {
+    margin: 15px;
+    margin-top: -40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.review .talk{
+    margin: 15px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    height: 200px;
+    background-position: center;
+}
+
+.img {
+    display: block;
+    height: 140px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.talk {
+    height: 70px;
+    color: grey;
+}
+
+/* ???????????????? css carousel? ???????????????? */
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: -70px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++ MEDIA +++++++++++++++++++++++++++++++ */
+
+@media only all and (max-width: 1260px){
+    
+/* +++++++++++++**+++++++ hero ++++++++++++++++++++++ */
+    
+    .apply {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+/* +++++++++++++**+++++++ slider ++++++++++++++++++++++ */
+    
+    .yelp {
+        font-size: 0.9em;
+    }
+    
+    .slideshow-container {
+        width: 750px;
+    }
+    
+    .review .talk{
+        font-size: 16px;
+    }
+    
+    .review .talk.five{
+        letter-spacing: -1px;
+    }
+    
+    .dot {
+        margin-top: 15px;
+    }
+
+}
+
+@media only all and (max-width: 840px){
+    
+    .main{
+        height: 450px;
+    }
+
+    .main .front .title {
+        padding-top: 100px;
+        font-size: 70px;
+    }
+    
+    .main .front .subtitle {
+        font-size: 40px;
+    }
+    
+    .main .front a  {
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .yelp hr { 
+        margin-top: 50px;
+    }
+    
+    .yelp {
+        font-size: 0.8rem;
+    }
+    
+    .slideshow-container {
+        width: 600px;
+    }
+    
+    .review .talk{
+        font-size: 16px;
+    }
+    
+    .review .talk.five{
+        letter-spacing: -1px;
+    }
+    
+    .dot {
+        margin-top: 20px;
+        transform: scale(0.8, 0.8);
+        margin-bottom: 80px;
+    }
+
+}
+
+@media only all and (max-width: 680px){
+    .slideshow-container {
+        width: 470px;
+    }
+    
+    .dot {
+        margin-top: 40px;
+    }
+}
+
+@media only all and (max-width: 580px){
+    .main{
+        height: 400px;
+    }
+
+    .main .front .title {
+        padding-top: 100px;
+        font-size: 55px;
+    }
+    
+    .main .front .subtitle {
+        font-size: 30px;
+    }
+    
+    .main .front a  {
+        margin-top: 30px;
+        padding: 12px;
+        font-size: 17px;
+    }
+    
+    .yelp hr { 
+        margin-top: 45px;
+    }
+    
+    .yelp .subhead {
+        font-size: 33px;
+    }
+    
+    .slideshow-container {
+        width: 330px;
+    }
+
+    .img {
+        height: 120px;
+    }
+    
+    .review .name {
+        font-size: 23px;
+        margin-top: -70px;
+    }
+    
+    .review .talk{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .dot {
+        margin-top: 20px;
+        transform: scale(0.7, 0.7);
+        margin-bottom: 70px;
+    }
+}
+
+@media only all and (max-width: 395px){
+    .main{
+        height: 350px;
+    }
+
+    .main .front .title {
+/*        padding-top: 100px;*/
+        font-size: 48px;
+    }
+    
+    .main .front .subtitle {
+        font-size: 25px;
+        letter-spacing: -2.5px;
+    }
+    
+    .main .front a  {
+/*        margin-top: 40px;*/
+/*        padding: 20px;*/
+        font-size: 20px;
+    }
+}

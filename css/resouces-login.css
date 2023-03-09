@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Noto Serif', serif;
+}
+
+/* +++++++++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++++++++ */
+
+
+.header .nav.resources {
+    border-bottom: 2px solid black;
+}
+
+/* +++++++++++++++++++++++++++++++ Opener +++++++++++++++++++++++++++++++ */
+
+.opener hr {
+    border: 2px solid aqua;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.subtext {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: gray;
+}
+
+.note {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 8px;
+    color: red;
+}
+
+
+/* +++++++++++++++++++++++++++++++ Login +++++++++++++++++++++++++++++++ */
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-left: 18px;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+p a {
+    font-size: 11px;
+    color: #aaa;
+    float: right;
+    margin-top: -13px;
+    margin-right: 20px;
+    transition: 0.2sec ease 0s;  /* ? */
+}
+
+p a:hover {
+    color: black;
+}
+
+input {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    outline: none;
+}
+
+input[type=text],
+input[type=password] {
+    color: gray;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    transition: all 0.2s ease 0s;
+}
+
+input[type=text]:hover,
+input[type=password]:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B1D2D4;
+}
+
+form input:focus {
+  border-color: #32c1c9;
+}
+
+
+
+/* +++++++++++++++++++++++ check ++++++++++++++++++++++++ */
+
+.lower {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: gray;
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Hide default checkbox */
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+  margin-top: 10px;
+}
+
+.box:hover input ~ .checkmark {
+  transition: all 0.2s ease 0s;
+  background-color: #B1D2D4;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+}
+
+.box input:checked ~ .checkmark {
+  transition: all 0.2s ease 0s;
+  background-color: #32c1c9;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #32c1c9;
+}
+
+/* checkmark */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* after checked */
+.box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style checkmark */
+.box .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.forgot {
+    color: #32c1c9;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.forgot:hover {
+    color: #335959;
+    transition: all 0.2s ease 0s;
+}
+
+.login {
+    display: block;
+    color: #32c1c9;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 20;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #32c1c9;
+    border-image: initial;
+    text-decoration: none;
+    width: 500px;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+    font-size: 35px;
+}
+
+.login:hover {
+    background-color: #32c1c9;
+    border-color: #32c1c9;
+    color: white;
+}
+
+/* +++++++++++++++++++++++++++++++ Footer +++++++++++++++++++++++++++++++ */
+
+.footer {
+    margin-top: 100px;
+}
+
+/* +++++++++++++++++++++++++++++++ Media +++++++++++++++++++++++++++++++ */
+@media only all and (max-width: 850px) {
+    .hamburger {
+        margin-top: 0;
+    }
+}
+
+@media only all and (max-width: 830px){
+    .title {
+        font-size: 40px;
+    }
+    
+    .opener .subtext {
+        font-size: 15px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    
+    .opener .note {
+        font-size: 10px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    
+    .container {
+       margin-bottom: 15px; 
+    }
+    
+    input[type=text],
+    input[type=password] {
+        color: gray;
+        padding-left: 10px;
+        margin: 10px;
+        margin-top: 12px;
+        margin-left: 18px;
+        width: 400px;
+        height: 50px;
+    }
+    
+    .box, .forgot {
+        font-size: 16px;
+        position: relative;
+        top: 10px;
+    }
+    
+    .lower {
+        width: 440px;
+    }
+    
+    .login{
+        width: 400px;
+    }
+    
+    .opener hr {
+        margin-top: 50px;
+    }
+    
+    
+}
+
+@media only all and (max-width: 460px){
+    .title {
+        font-size: 35px;
+    }
+    
+    .opener .subtext {
+        font-size: 14px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .opener .note {
+        font-size: 9px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .container {
+       margin-bottom: 15px; 
+    }
+    
+    input[type=text],
+    input[type=password] {
+        color: gray;
+        padding-left: 10px;
+        margin: 10px;
+        margin-top: 12px;
+        margin-left: 18px;
+        width: 310px;
+        height: 50px;
+    }
+    
+    .box, .forgot {
+        font-size: 14px;
+        position: relative;
+        top: 10px;
+    }
+    
+    .lower {
+        width: 360px;
+    }
+    
+    .login{
+        width: 310px;
+        font-size: 30px;
+        margin-top: 22px;
+    }
+    
+}
+
+@media only all and (max-width: 400px){
+    .lower {
+        margin-top: -20px;
+        margin-bottom: 10px;
+        width: 310px;
+    }
+}

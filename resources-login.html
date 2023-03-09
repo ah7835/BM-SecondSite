@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BM Login | Anthony Ho P2</title>
+    <link rel="stylesheet" href="css/resouces-login.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    
+    <div class="header">
+            <nav>
+                 <a href="index.html" class="logo-link"><img src="pic/icon/LogoV1.png" alt="logo" class="logo"></a>
+                
+                <div class="nav-use">
+                    <label class="hamburger" for="toggle">&#9776;</label>
+                    <input class="extra-toggle" type="checkbox" id="toggle"/>
+                    <ul class="nav-main">
+                        <li><a href="index.html" class="nav home">Home</a></li>
+                        <li><a href="about.html" class="nav about">About</a></li>
+                        <li><a href="resources-login.html" class="nav resources">Resources</a></li>
+                        <li><a href="classes.html" class="nav classes">Classes</a></li>
+                        <li><a href="contact.html" class="nav contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    
+    <div class="hr"><hr></div>
+    
+    <div class="header-nav-hid">
+        <ul class="nav-main-hid">
+            <li><a href="index.html" class="nav-hid home">Home</a></li>
+            <li><a href="about.html" class="nav-hid about">About</a></li>
+            <li><a href="resources-login.html" class="nav resources">Resources</a></li>
+            <li><a href="classes.html" class="nav-hid  classes">Classes</a></li>
+            <li><a href="contact.html" class="nav-hid  contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="opener">
+        <hr>
+        <p class="title">Resources</p>
+        <p class="subtext">Login to Access Content</p>
+        <p class="note">DEVELOPER NOTE: Just click on the login button to access</p>
+    </div>
+    <div class="type">
+        <div class="container" id="container">       
+            <form action="resources.html" method="get">
+
+                <label for="username">E-mail</label>    
+                <input type="text" id="username" name="username">
+                    
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                    
+                
+            </form>
+        </div>
+        <div class="lower">
+            <label class="box">Remember Me
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+        <a href="resources.html" class="login">Log In</a>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="footer-text">
+            <p class="foo-t">@2014 BeautifulMandarin</p>
+            <p class="foo-t bar">  |  </p>
+            <div class="foo-stuff">
+                <a href="#" class="foo-t">Terms</a>
+                <a href="#" class="foo-t">Private Policy</a>
+                <a href="#" class="foo-t">Cultural Exchange</a>
+            </div>
+            <p class="foo-t bar">  |  </p>
+            <div class="foo-contact">
+                <p class="foo-t">(343)395-6078</p>
+                <p class="foo-t">syan@beautifulmandarin.com</p>
+            </div>
+        </div>
+        <div class="media">
+            <a href="https://www.linkedin.com/company/beautifulmandarin/about/" target="_blank" class="social linkedin">
+                <img src ="pic/icon/Linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://www.facebook.com/Beautiful-Mandarin-509807202524210/" target="_blank" class="social facebook">
+                <img src ="pic/icon/Facebook.png" alt="facebook">
+            </a>
+        </div>
+    </div>
+    
+    <script src="js/hamburger.js"></script>
+    
+    
+</body>
+</html>

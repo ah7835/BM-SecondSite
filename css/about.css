@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* +++++++++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++++++++ */
+
+
+.header .nav.about {
+    border-bottom: 2px solid black;
+}
+
+/* +++++++++++++++++++++++++++++++ About/Founder +++++++++++++++++++++++++++++++ */
+
+.about-text {
+    margin-top: 20px;
+}
+
+.about-text hr, .founder hr {
+    border: 2px solid aqua;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+.about-text , .founder{
+    margin-left: 50px;
+}
+
+.subhead {
+    font-size: 50px;
+}
+
+.content {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.content.ab {
+    margin-right: 500px;
+}
+
+.content.te {
+    margin-right: 100px;
+}
+
+.content.te.first {
+    font-size: 30px;
+}
+
+.sissi {
+    transform: scale(0.5, 0.5);
+    margin-right: 30px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+} 
+
+.founder {
+      margin-bottom: 100px;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++ MEDIA +++++++++++++++++++++++++++++++ */
+
+
+
+@media only all and (max-width: 1140px) {
+    
+    .subhead{
+        font-size: 35px;
+    }
+    
+    .content, .content.ab{
+        font-size: 17px;
+    }
+    
+    .content.te.first {
+        font-size: 25px;
+    }
+    
+}
+
+@media only all and (max-width: 1060px){
+    .content.ab{
+        margin-right: 100px;
+    }
+    
+    .flex-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .sissi {
+        display: none;
+    }
+}
+
+@media only all and (max-width: 870px){
+    .sissi {
+        position: relative;
+        bottom: 550px;
+    }
+}
+
+
+@media only all and (max-width: 750px) {
+   .about-text hr, .founder hr { 
+        margin-top: 50px;
+    }
+    
+    .content, .content.ab {
+        font-size: 15px;
+    }
+    
+    .content.te.first{
+        font-size: 20px;
+    }
+
+}
+
+@media only all and (max-width: 580px){
+    .content.ab{
+        margin-right: 65px;
+    }
+    
+    .subhead{
+        font-size: 30px;
+    }
+    
+    .content, .content.ab {
+        font-size: 13px;
+    }
+    
+    .content.te.first{
+        font-size: 16px;
+    }
+    
+    .content.te.third{
+        margin-top: 18px;
+    }
+}
+
+@media only all and (max-width: 380px) {
+    .content.te{
+        margin-right: 70px;
+    }
+}
+
